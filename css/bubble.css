@@ -1,0 +1,70 @@
+/* -------------------- *\
+ * Bubble default style *
+\* -------------------- */
+.bubble {
+  transition: all 0.5s ease-in;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+  color: #FFFFFF;
+  background: #1A1A1A;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: zoomIn;
+  margin: 10px;
+}
+
+.bubble__content {
+  padding-top: 25%;
+}
+
+.bubble.is-active {
+  transform: scale(1.1);
+  width: 200px;
+  height: 200px;
+  font-size: 40px;
+}
+
+
+/* ----------------- *\
+ * Animation loading *
+\* ----------------- */
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3, 0.2, 0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3, 0.2, 0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3, 0.2, 0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3, 0.2, 0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+}
