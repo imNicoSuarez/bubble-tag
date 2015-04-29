@@ -3,7 +3,6 @@ Bubble Tags
 
 Etiquetas burbuja es un plugin de jQuery para resaltar la burbuja con la etiqueta seleccionada
 
-----------
 
 
 Documents
