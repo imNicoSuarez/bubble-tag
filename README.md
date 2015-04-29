@@ -67,6 +67,8 @@ $bubble-animate-duration: 1s;
 $bubble-margin: 10px;
 ```
 
+## <a href="http://codepen.io/imNicoSuarez/pen/YXPEKL"> Demo </a>
+
 ## License
 
 The MIT License (MIT)
