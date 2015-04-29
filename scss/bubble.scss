@@ -1,0 +1,48 @@
+@import 'settings';
+@import 'mixin';
+
+/* -------------------- *\
+ * Bubble default style *
+\* -------------------- */
+.bubble {
+  transition: all $bubble-transition-duration $bubble-transition-time-function;
+  width: $bubble-size-small;
+  height: $bubble-size-small;
+  border-radius: 100%;
+  text-align: center;
+  font-size: $bubble-font-size-small;
+  display: inline-block;
+  color: $bubble-default-color;
+  background: $bubble-default-background;
+  animation-duration: $bubble-animate-duration;
+  animation-fill-mode: both;
+  animation-name: zoomIn;
+  margin: $bubble-margin;
+
+  // Generate class [.bubble__content {...}]
+  &__content {
+    padding-top: 25%;
+  }
+
+  // Generate class [.bubble.is-active {...}]
+  &.is-active {
+    transform: scale(1.1);
+    width: $bubble-size-big;
+    height: $bubble-size-big;
+    font-size: $bubble-font-size-big;
+  }
+}
+
+/* ----------------- *\
+ * Animation loading *
+\* ----------------- */
+@include keyframes(zoomIn) {
+  0% {
+    opacity: 0;
+    transform: scale(.3, .2, .5);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
