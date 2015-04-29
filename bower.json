@@ -1,0 +1,15 @@
+{
+  "name": "bubble-tag",
+  "version": "0.0.1",
+  "homepage": "https://github.com/imNicoSuarez/bubble-tag",
+  "description": "Bubble tags plugin",
+  "keywords": [
+    "tags",
+    "bubble",
+    "jquery"
+  ],
+  "authors": [
+    "Nicolas Suarez <nicolassuarez.cabrera@gmail.com>"
+  ],
+  "license": "MIT"
+}
