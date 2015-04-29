@@ -10,7 +10,7 @@ Documents
 -------------
 
 
-**Inatall**
+**Install**
 
 <a href="http://bower.io/search/?q=bubble-tag">
   <img src="https://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
