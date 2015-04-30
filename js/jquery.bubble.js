@@ -30,7 +30,7 @@
 
   $.fn.bubble = function(separator) {
 
-    if (typeof options === "undefined" || options === null) {
+    if (typeof separator === "undefined" || separator === null) {
       separator = ',';
     }
 
