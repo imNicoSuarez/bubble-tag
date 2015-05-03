@@ -3,6 +3,7 @@
 \* -------------------- */
 .bubble {
   transition: all 0.5s ease-in;
+  transform: scale(1) skew(0deg) translate(0);
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -14,20 +15,19 @@
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: zoomIn;
-  margin: 10px;
+  margin: 8%;
 }
-
 .bubble__content {
   padding-top: 25%;
 }
-
 .bubble.is-active {
-  transform: scale(1.1);
-  width: 200px;
-  height: 200px;
-  font-size: 40px;
+  transform: scale(2) skew(0deg) translateY(-10px);
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
 }
-
 
 /* ----------------- *\
  * Animation loading *
@@ -35,36 +35,64 @@
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale3d(0.3, 0.2, 0.5);
+    -webkit-transform: scale(0.2) translate(0px);
+    -moz-transform: scale(0.2) translate(0px);
+    -o-transform: scale(0.2) translate(0px);
+    transform: scale(0.2) translate(0px);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1) skew(0deg) translateY(-10px);
+    -moz-transform: scale(1) skew(0deg) translateY(-10px);
+    -o-transform: scale(1) skew(0deg) translateY(-10px);
+    transform: scale(1) skew(0deg) translateY(-10px);
   }
 }
 @-moz-keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale3d(0.3, 0.2, 0.5);
+    -webkit-transform: scale(0.2) translate(0px);
+    -moz-transform: scale(0.2) translate(0px);
+    -o-transform: scale(0.2) translate(0px);
+    transform: scale(0.2) translate(0px);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1) skew(0deg) translateY(-10px);
+    -moz-transform: scale(1) skew(0deg) translateY(-10px);
+    -o-transform: scale(1) skew(0deg) translateY(-10px);
+    transform: scale(1) skew(0deg) translateY(-10px);
   }
 }
 @-ms-keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale3d(0.3, 0.2, 0.5);
+    -webkit-transform: scale(0.2) translate(0px);
+    -moz-transform: scale(0.2) translate(0px);
+    -o-transform: scale(0.2) translate(0px);
+    transform: scale(0.2) translate(0px);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1) skew(0deg) translateY(-10px);
+    -moz-transform: scale(1) skew(0deg) translateY(-10px);
+    -o-transform: scale(1) skew(0deg) translateY(-10px);
+    transform: scale(1) skew(0deg) translateY(-10px);
   }
 }
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale3d(0.3, 0.2, 0.5);
+    -webkit-transform: scale(0.2) translate(0px);
+    -moz-transform: scale(0.2) translate(0px);
+    -o-transform: scale(0.2) translate(0px);
+    transform: scale(0.2) translate(0px);
   }
   50% {
     opacity: 1;
+    -webkit-transform: scale(1) skew(0deg) translateY(-10px);
+    -moz-transform: scale(1) skew(0deg) translateY(-10px);
+    -o-transform: scale(1) skew(0deg) translateY(-10px);
+    transform: scale(1) skew(0deg) translateY(-10px);
   }
 }

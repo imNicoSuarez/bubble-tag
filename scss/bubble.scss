@@ -6,6 +6,7 @@
 \* -------------------- */
 .bubble {
   transition: all $bubble-transition-duration $bubble-transition-time-function;
+  transform: scale(1) skew(0deg) translate(0);
   width: $bubble-size-small;
   height: $bubble-size-small;
   border-radius: 100%;
@@ -26,10 +27,8 @@
 
   // Generate class [.bubble.is-active {...}]
   &.is-active {
-    transform: scale(1.1);
-    width: $bubble-size-big;
-    height: $bubble-size-big;
-    font-size: $bubble-font-size-big;
+    transform: scale(2) skew(0deg) translateY(-10px);
+    @include transform-origin(center center);
   }
 }
 
@@ -39,10 +38,11 @@
 @include keyframes(zoomIn) {
   0% {
     opacity: 0;
-    transform: scale3d(.3, .2, .5);
+    @include transform(scale(0.2) translate(0px));
   }
 
   50% {
     opacity: 1;
+    @include transform(scale(1) skew(0deg) translateY(-10px));
   }
 }
