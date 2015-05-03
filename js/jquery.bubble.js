@@ -8,7 +8,7 @@
  *                                         *
  *  - Ej Separator (Default ','):          *
  *                                         *
- *   $('.bubble').bubble(':');             *
+ *  $('.bubble').bubble({separator:';'});  *
  *                                         *
  *  - Ej:                                  *
  *                                         *
@@ -28,11 +28,10 @@
     return -1;
   }
 
-  $.fn.bubble = function(separator) {
+  $.fn.bubble = function(options) {
+    var defOptions = { separator: ',' };
 
-    if (typeof separator === "undefined" || separator === null) {
-      separator = ',';
-    }
+    var options = $.extend(defOptions, options);
 
     var self = this;
     var tag = self.data('bubble-key');
@@ -41,7 +40,7 @@
     $('.bubble').each( function(i) {
         var dataTag = $(this).data('bubble-tags')
                              .replace(/\s/g, '')
-                             .split(separator);
+                             .split(options.separator);
 
         var resultTag = searchTag(tag, dataTag);
 
